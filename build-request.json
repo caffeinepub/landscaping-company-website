@@ -1,0 +1,39 @@
+{
+  "kind": "build_request",
+  "title": "Remove 'greater metro area' text from top of website",
+  "projectName": "Green Roots Landscaping",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "text": "Find and remove or replace every occurrence of 'greater metro area' (or similar generic metro area phrasing) anywhere in the Navbar, Hero section, or any other component rendered at the top of the page, replacing it with 'Serving Marshall, Longview, Jefferson & Surrounding Areas, Texas'.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "I see greater metro area at the top of the website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "No instance of 'greater metro area' or similar generic metro phrasing appears anywhere on the page — including the Navbar, Hero, and any sticky/fixed header elements.",
+        "Any replaced text reads 'Serving Marshall, Longview, Jefferson & Surrounding Areas, Texas' (or equivalent natural phrasing).",
+        "The rest of the Navbar and Hero content remains unchanged."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not alter any layout, styling, or content unrelated to the metro area text fix.",
+    "Do not modify files under frontend/src/hooks/ or frontend/src/components/ui."
+  ],
+  "nonGoals": [
+    "Redesigning the Hero or Navbar sections.",
+    "Adding new sections or features.",
+    "Backend changes."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

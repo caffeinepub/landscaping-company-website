@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "A basic static website for a single-person landscaping company serving Marshall, Longview, Jefferson, and surrounding areas in Texas.",
+  "architectural_notes": [
+    "Static HTML/CSS site with no backend or dynamic content"
+  ],
+  "known_issues": [
+    "'greater metro area' text still appears at the top of the website (hero or header area)"
+  ],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-static-website-for-a-one-man-landscaping-company-with-the-following-sections-hero-with-company-name-tagline-and-call-to-action-button-services-list-of-common-landscaping-services-about-brief-bio-description-of-the-owner-and-contact-phone-number-email-and-service-area",
+      "title": "Create a single-page static website for a one-man landscaping company with the following sections: Hero (with company name, tagline, and call-to-action button), Services (list of common landscaping services), About (brief bio/description of the owner), and Contact (phone number, email, and service area).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-cohesive-visual-theme-inspired-by-nature-and-outdoor-work-earthy-greens-warm-soil-browns-and-cream-off-white-tones-use-a-sturdy-serif-or-slab-serif-heading-font-paired-with-a-clean-sans-serif-body-font-layout-should-feel-grounded-and-trustworthy-with-generous-whitespace-subtle-texture-like-backgrounds-and-bold-section-dividers",
+      "title": "Apply a cohesive visual theme inspired by nature and outdoor work: earthy greens, warm soil browns, and cream/off-white tones. Use a sturdy serif or slab-serif heading font paired with a clean sans-serif body font. Layout should feel grounded and trustworthy, with generous whitespace, subtle texture-like backgrounds, and bold section dividers.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-all-instances-of-the-service-area-text-in-the-contact-section-and-footer-to-read-serving-marshall-longview-jefferson-surrounding-areas-texas-or-equivalent-natural-phrasing",
+      "title": "Update all instances of the service area text in the Contact section and Footer to read 'Serving Marshall, Longview, Jefferson & Surrounding Areas, Texas' (or equivalent natural phrasing).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-find-and-remove-or-replace-every-occurrence-of-greater-metro-area-or-similar-generic-metro-area-phrasing-anywhere-in-the-navbar-hero-section-or-any-other-component-rendered-at-the-top-of-the-page-replacing-it-with-serving-marshall-longview-jefferson-surrounding-areas-texas",
+      "title": "Find and remove or replace every occurrence of 'greater metro area' (or similar generic metro area phrasing) anywhere in the Navbar, Hero section, or any other component rendered at the top of the page, replacing it with 'Serving Marshall, Longview, Jefferson & Surrounding Areas, Texas'.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Static landing page with hero section, services, about, and contact info",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Find and replace any remaining instances of 'greater metro area' (or similar generic metro area phrasing) in the Contact section and Footer with 'Serving Marshall, Longview, Jefferson & Surrounding Areas, Texas'.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Landscaping Company Website",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,11 @@
+{
+  "frontend/src/index.css": "Global styles with a nature-inspired OKLCH color system (earthy greens, warm browns, cream tones), Google Fonts import for Playfair Display and Inter, and a subtle texture utility class.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with custom `forest`, `soil`, and `cream` color palettes, Playfair Display serif and Inter sans-serif font families, and custom earthy box shadows.",
+  "frontend/src/App.tsx": "Root app component that composes the full single-page layout: Navbar, Hero, Services, About, Contact, and Footer sections.",
+  "frontend/src/components/Navbar.tsx": "Sticky top navigation bar with logo, smooth-scroll nav links, mobile hamburger menu, and a \"Get a Free Quote\" CTA button. Darkens on scroll.",
+  "frontend/src/components/Hero.tsx": "Full-screen hero section with background image, dark overlay, company headline, tagline, dual CTA buttons, and trust indicator stats. The service area badge now reads \"Serving Marshall, Longview, Jefferson & Surrounding Areas, Texas\" instead of the generic \"Greater Metro Area\".",
+  "frontend/src/components/Services.tsx": "Services grid with 8 landscaping offerings and a CTA banner. Fixed the curly apostrophe parse error on line 56 by switching the description string to double-quoted to safely contain the apostrophe.",
+  "frontend/src/components/About.tsx": "Two-column about section with owner portrait, bio text, and highlights grid. Replaced `flex-shrink-0` with `shrink-0` and escaped curly quotes/apostrophes with JSX entities.",
+  "frontend/src/components/Contact.tsx": "Dark-themed contact section with info cards (phone, email, service area, hours) and a quote request form. Service area updated to \"Marshall, Longview, Jefferson & Surrounding Areas\" with sub-label \"East Texas, TX\".",
+  "frontend/src/components/Footer.tsx": "Site footer with brand, quick links, contact details, copyright, and caffeine.ai attribution. Service area updated to \"Marshall, Longview, Jefferson & Surrounding Areas, East Texas, TX\"."
+}

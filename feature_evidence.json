@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-find-and-remove-or-replace-every-occurrence-of-greater-metro-area-or-similar-generic-metro-area-phrasing-anywhere-in-the-navbar-hero-section-or-any-other-component-rendered-at-the-top-of-the-page-replacing-it-with-serving-marshall-longview-jefferson-surrounding-areas-texas",
+      "featureTitle": "Find and remove or replace every occurrence of 'greater metro area' (or similar generic metro area phrasing) anywhere in the Navbar, Hero section, or any other component rendered at the top of the page, replacing it with 'Serving Marshall, Longview, Jefferson & Surrounding Areas, Texas'.",
+      "files": [
+        "frontend/src/components/Hero.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

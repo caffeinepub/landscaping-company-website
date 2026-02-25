@@ -1,0 +1,28 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Remove 'greater metro area' text from top of website",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "summary": "Replace all occurrences of 'greater metro area' text in top-of-page components with 'Serving Marshall, Longview, Jefferson & Surrounding Areas, Texas'",
+      "acceptanceCriteria": [
+        "No instance of 'greater metro area' or similar generic metro phrasing appears anywhere on the page — including the Navbar, Hero, and any sticky/fixed header elements.",
+        "Any replaced text reads 'Serving Marshall, Longview, Jefferson & Surrounding Areas, Texas' (or equivalent natural phrasing).",
+        "The rest of the Navbar and Hero content remains unchanged."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "modify",
+          "description": "Search for any instance of 'greater metro area' or similar generic metro area phrasing in the Navbar component and replace it with 'Serving Marshall, Longview, Jefferson & Surrounding Areas, Texas'. Review all text content including any service area labels or header text."
+        },
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Search for any instance of 'greater metro area' or similar generic metro area phrasing in the Hero component (headline, tagline, or trust indicators) and replace it with 'Serving Marshall, Longview, Jefferson & Surrounding Areas, Texas'. Ensure the replacement fits naturally within the Hero layout."
+        }
+      ]
+    }
+  ]
+}
