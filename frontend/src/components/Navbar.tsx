@@ -30,8 +30,8 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-forest-800 shadow-earthy-lg'
-          : 'bg-forest-900/90 backdrop-blur-sm'
+          ? 'bg-cream-100 shadow-earthy-lg'
+          : 'bg-cream-50/95 backdrop-blur-sm'
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,14 +41,14 @@ export default function Navbar() {
             onClick={() => handleNavClick('#home')}
             className="flex items-center gap-2 group"
           >
-            <div className="w-9 h-9 rounded-full bg-forest-400 flex items-center justify-center group-hover:bg-forest-300 transition-colors">
-              <Leaf className="w-5 h-5 text-forest-900" />
+            <div className="w-9 h-9 rounded-full bg-forest-600 flex items-center justify-center group-hover:bg-forest-500 transition-colors">
+              <Leaf className="w-5 h-5 text-cream-50" />
             </div>
             <div className="text-left">
-              <span className="block font-serif font-bold text-cream-100 text-lg leading-tight">
+              <span className="block font-serif font-bold text-forest-900 text-lg leading-tight">
                 Green Roots
               </span>
-              <span className="block text-forest-300 text-xs tracking-widest uppercase leading-tight">
+              <span className="block text-forest-600 text-xs tracking-widest uppercase leading-tight">
                 Landscaping
               </span>
             </div>
@@ -60,14 +60,14 @@ export default function Navbar() {
               <button
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className="px-4 py-2 text-cream-300 hover:text-cream-100 font-sans text-sm font-medium tracking-wide transition-colors hover:bg-forest-700/50 rounded"
+                className="px-4 py-2 text-forest-700 hover:text-forest-900 font-sans text-sm font-medium tracking-wide transition-colors hover:bg-forest-100/60 rounded"
               >
                 {link.label}
               </button>
             ))}
             <button
               onClick={() => handleNavClick('#contact')}
-              className="ml-4 px-5 py-2 bg-soil-400 hover:bg-soil-300 text-cream-50 font-sans text-sm font-semibold rounded transition-colors shadow-xs"
+              className="ml-4 px-5 py-2 bg-soil-400 hover:bg-soil-300 text-forest-900 font-sans text-sm font-semibold rounded transition-colors shadow-xs"
             >
               Get a Free Quote
             </button>
@@ -75,7 +75,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-cream-200 hover:text-cream-100 transition-colors"
+            className="md:hidden p-2 text-forest-700 hover:text-forest-900 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -86,20 +86,20 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-forest-900 border-t border-forest-700">
+        <div className="md:hidden bg-cream-50 border-t border-forest-200">
           <nav className="px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               <button
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className="text-left px-4 py-3 text-cream-200 hover:text-cream-100 hover:bg-forest-700/50 font-sans text-base font-medium rounded transition-colors"
+                className="text-left px-4 py-3 text-forest-800 hover:text-forest-900 hover:bg-forest-100/60 font-sans text-base font-medium rounded transition-colors"
               >
                 {link.label}
               </button>
             ))}
             <button
               onClick={() => handleNavClick('#contact')}
-              className="mt-2 px-4 py-3 bg-soil-400 hover:bg-soil-300 text-cream-50 font-sans text-base font-semibold rounded transition-colors text-center"
+              className="mt-2 px-4 py-3 bg-soil-400 hover:bg-soil-300 text-forest-900 font-sans text-base font-semibold rounded transition-colors text-center"
             >
               Get a Free Quote
             </button>

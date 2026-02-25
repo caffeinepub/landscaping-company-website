@@ -24,15 +24,15 @@ export default function About() {
                 alt="Marcus Green, owner of Green Roots Landscaping"
                 className="w-full object-cover aspect-square"
               />
-              {/* Name card overlay */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-forest-900/90 to-transparent p-6">
-                <p className="font-serif font-bold text-cream-100 text-xl">Marcus Green</p>
-                <p className="font-sans text-forest-300 text-sm">Owner &amp; Head Landscaper</p>
+              {/* Name card overlay — light background with dark text */}
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-cream-100/95 to-transparent p-6">
+                <p className="font-serif font-bold text-forest-900 text-xl">Marcus Green</p>
+                <p className="font-sans text-forest-700 text-sm">Owner &amp; Head Landscaper</p>
               </div>
             </div>
 
             {/* Floating badge */}
-            <div className="absolute -bottom-6 -right-2 sm:-right-6 bg-soil-400 text-cream-50 rounded-lg px-5 py-4 shadow-earthy-lg text-center">
+            <div className="absolute -bottom-6 -right-2 sm:-right-6 bg-soil-400 text-forest-900 rounded-lg px-5 py-4 shadow-earthy-lg text-center">
               <p className="font-serif font-bold text-3xl leading-none">10+</p>
               <p className="font-sans text-xs font-medium mt-1 leading-tight">Years of<br />Experience</p>
             </div>

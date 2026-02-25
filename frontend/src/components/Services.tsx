@@ -97,11 +97,11 @@ export default function Services() {
         </div>
 
         {/* CTA Banner */}
-        <div className="mt-16 bg-forest-700 rounded-lg p-8 sm:p-10 text-center shadow-earthy-lg">
-          <h3 className="font-serif font-bold text-cream-100 text-2xl sm:text-3xl mb-3">
+        <div className="mt-16 bg-cream-100 border border-forest-200 rounded-lg p-8 sm:p-10 text-center shadow-earthy-lg">
+          <h3 className="font-serif font-bold text-forest-900 text-2xl sm:text-3xl mb-3">
             Not sure what you need?
           </h3>
-          <p className="font-sans text-forest-200 text-base mb-6 max-w-lg mx-auto">
+          <p className="font-sans text-forest-700 text-base mb-6 max-w-lg mx-auto">
             I&apos;ll come out and assess your property for free. No pressure, no obligation.
           </p>
           <button
@@ -109,7 +109,7 @@ export default function Services() {
               const el = document.querySelector('#contact');
               if (el) el.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="inline-block px-8 py-3 bg-soil-400 hover:bg-soil-300 text-cream-50 font-sans font-semibold rounded transition-colors shadow-xs"
+            className="inline-block px-8 py-3 bg-soil-400 hover:bg-soil-300 text-forest-900 font-sans font-semibold rounded transition-colors shadow-xs"
           >
             Schedule a Free Assessment
           </button>

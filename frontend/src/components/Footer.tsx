@@ -19,26 +19,26 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-forest-900 text-forest-300">
+    <footer className="bg-cream-100 text-forest-700 border-t border-forest-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer */}
         <div className="py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-full bg-forest-400 flex items-center justify-center">
-                <Leaf className="w-5 h-5 text-forest-900" />
+              <div className="w-9 h-9 rounded-full bg-forest-600 flex items-center justify-center">
+                <Leaf className="w-5 h-5 text-cream-50" />
               </div>
               <div>
-                <span className="block font-serif font-bold text-cream-100 text-lg leading-tight">
+                <span className="block font-serif font-bold text-forest-900 text-lg leading-tight">
                   Green Roots
                 </span>
-                <span className="block text-forest-400 text-xs tracking-widest uppercase leading-tight">
+                <span className="block text-forest-600 text-xs tracking-widest uppercase leading-tight">
                   Landscaping
                 </span>
               </div>
             </div>
-            <p className="font-sans text-forest-400 text-sm leading-relaxed max-w-xs">
+            <p className="font-sans text-forest-700 text-sm leading-relaxed max-w-xs">
               Professional, personal landscaping services for homeowners who take pride in
               their outdoor spaces.
             </p>
@@ -46,7 +46,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-serif font-semibold text-cream-200 text-base mb-4">
+            <h4 className="font-serif font-semibold text-forest-900 text-base mb-4">
               Quick Links
             </h4>
             <ul className="space-y-2">
@@ -54,7 +54,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <button
                     onClick={() => handleNavClick(link.href)}
-                    className="font-sans text-forest-400 hover:text-forest-200 text-sm transition-colors"
+                    className="font-sans text-forest-700 hover:text-forest-900 text-sm transition-colors"
                   >
                     {link.label}
                   </button>
@@ -65,23 +65,23 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-serif font-semibold text-cream-200 text-base mb-4">
+            <h4 className="font-serif font-semibold text-forest-900 text-base mb-4">
               Contact
             </h4>
             <ul className="space-y-3">
-              <li className="flex items-center gap-3 font-sans text-forest-400 text-sm">
-                <Phone className="w-4 h-4 text-forest-500 shrink-0" />
+              <li className="flex items-center gap-3 font-sans text-forest-700 text-sm">
+                <Phone className="w-4 h-4 text-forest-600 shrink-0" />
                 (555) 234-5678
               </li>
-              <li className="flex items-center gap-3 font-sans text-forest-400 text-sm">
-                <Mail className="w-4 h-4 text-forest-500 shrink-0" />
+              <li className="flex items-center gap-3 font-sans text-forest-700 text-sm">
+                <Mail className="w-4 h-4 text-forest-600 shrink-0" />
                 marcus@greenrootslandscaping.com
               </li>
-              <li className="flex items-start gap-3 font-sans text-forest-400 text-sm">
-                <MapPin className="w-4 h-4 text-forest-500 shrink-0 mt-0.5" />
+              <li className="flex items-start gap-3 font-sans text-forest-700 text-sm">
+                <MapPin className="w-4 h-4 text-forest-600 shrink-0 mt-0.5" />
                 <span>
                   Marshall, Longview, Jefferson &amp; Surrounding Areas<br />
-                  <span className="text-forest-500">East Texas, TX</span>
+                  <span className="text-forest-600">East Texas, TX</span>
                 </span>
               </li>
             </ul>
@@ -89,17 +89,17 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-forest-800 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-sans text-forest-500">
+        <div className="border-t border-forest-200 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-sans text-forest-600">
           <p>&copy; {year} Green Roots Landscaping. All rights reserved.</p>
           <p className="flex items-center gap-1">
             Built with{' '}
-            <span className="text-soil-400 mx-0.5">&#9829;</span>
+            <span className="text-soil-500 mx-0.5">&#9829;</span>
             {' '}using{' '}
             <a
               href={`https://caffeine.ai/?utm_source=Caffeine-footer&utm_medium=referral&utm_content=${appId}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-forest-400 hover:text-forest-200 transition-colors underline underline-offset-2"
+              className="text-forest-700 hover:text-forest-900 transition-colors underline underline-offset-2"
             >
               caffeine.ai
             </a>

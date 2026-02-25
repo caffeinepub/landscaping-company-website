@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 9,
+  "projectStateVersion": 17,
   "summary": "A basic static website for a single-person landscaping company serving Marshall, Longview, Jefferson, and surrounding areas in Texas.",
   "architectural_notes": [
     "Static HTML/CSS site with no backend or dynamic content"
@@ -8,7 +8,7 @@
   "known_issues": [
     "'greater metro area' text still appears at the top of the website (hero or header area)"
   ],
-  "isFixRequest": true,
+  "isFixRequest": false,
   "existing_features": [
     {
       "id": "feature-create-a-single-page-static-website-for-a-one-man-landscaping-company-with-the-following-sections-hero-with-company-name-tagline-and-call-to-action-button-services-list-of-common-landscaping-services-about-brief-bio-description-of-the-owner-and-contact-phone-number-email-and-service-area",
@@ -41,6 +41,38 @@
         "REQ-5"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-change-all-white-colored-text-throughout-the-site-to-black-this-includes-any-text-using-tailwind-classes-like-text-white-inline-white-color-styles-or-css-custom-properties-that-resolve-to-white-apply-this-change-across-all-components-navbar-hero-services-about-contact-footer-and-any-other-rendered-components-ensure-readability-is-maintained-by-checking-contrast-against-background-colors-where-a-dark-background-would-make-black-text-unreadable-use-a-very-dark-near-black-e-g-text-gray-900-or-adjust-the-background-color-to-a-light-tone-so-black-text-remains-legible",
+      "title": "Change all white-colored text throughout the site to black. This includes any text using Tailwind classes like `text-white`, inline white color styles, or CSS custom properties that resolve to white. Apply this change across all components: Navbar, Hero, Services, About, Contact, Footer, and any other rendered components. Ensure readability is maintained by checking contrast against background colors — where a dark background would make black text unreadable, use a very dark near-black (e.g., `text-gray-900`) or adjust the background color to a light tone so black text remains legible.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-hero-component-apply-bold-font-weight-to-the-tagline-text-professional-landscaping-services-with-a-personal-touch-from-lush-lawns-to-stunning-garden-beds-i-take-pride-in-every-blade-of-grass-by-adding-the-tailwind-class-font-bold-or-font-semibold-if-it-better-fits-the-existing-typography-scale-to-the-element-rendering-that-text",
+      "title": "In the Hero component, apply bold font weight to the tagline text 'Professional landscaping services with a personal touch. From lush lawns to stunning garden beds — I take pride in every blade of grass.' by adding the Tailwind class `font-bold` (or `font-semibold` if it better fits the existing typography scale) to the element rendering that text.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-hero-component-frontend-src-components-hero-tsx-remove-the-phrase-from-lush-lawns-to-stunning-garden-beds-from-the-tagline-text-so-that-it-reads-professional-landscaping-services-with-a-personal-touch-i-take-pride-in-every-blade-of-grass",
+      "title": "In the Hero component (frontend/src/components/Hero.tsx), remove the phrase ' From lush lawns to stunning garden beds — ' from the tagline text, so that it reads: 'Professional landscaping services with a personal touch. I take pride in every blade of grass.'",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-hero-component-frontend-src-components-hero-tsx-find-the-trust-indicator-stat-that-reads-200-happy-clients-or-200-200-happy-clients-or-any-similar-variant-and-replace-it-with-dozens-of-satisfied-customers-update-both-the-number-value-and-the-label-text-so-no-reference-to-200-or-happy-clients-remains",
+      "title": "In the Hero component (frontend/src/components/Hero.tsx), find the trust indicator stat that reads '200 happy clients' (or '200+' / '200 Happy Clients' or any similar variant) and replace it with 'dozens of satisfied customers'. Update both the number/value and the label text so no reference to '200' or 'happy clients' remains.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -56,6 +88,30 @@
       "reqIds": [
         "REQ-4"
       ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Change all white text to black throughout the site",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Make the hero tagline text 'Professional landscaping services with a personal touch. From lush lawns to stunning garden beds — I take pride in every blade of grass.' bold",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Remove the phrase ' From lush lawns to stunning garden beds — ' from the hero tagline, leaving it as 'Professional landscaping services with a personal touch. I take pride in every blade of grass.'",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Change '200 happy clients' to 'dozens of satisfied customers' in the website copy",
+      "reqIds": [],
       "status": "pending"
     }
   ],

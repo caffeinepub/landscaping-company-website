@@ -1,26 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Remove 'greater metro area' text from top of website",
+  "title": "Change '200 happy clients' to 'dozens of satisfied customers'",
   "requirements": [
     {
-      "id": "REQ-5",
-      "summary": "Replace all occurrences of 'greater metro area' text in top-of-page components with 'Serving Marshall, Longview, Jefferson & Surrounding Areas, Texas'",
+      "id": "REQ-9",
+      "summary": "Update Hero trust indicator stat from '200 happy clients' to 'dozens of satisfied customers'",
       "acceptanceCriteria": [
-        "No instance of 'greater metro area' or similar generic metro phrasing appears anywhere on the page — including the Navbar, Hero, and any sticky/fixed header elements.",
-        "Any replaced text reads 'Serving Marshall, Longview, Jefferson & Surrounding Areas, Texas' (or equivalent natural phrasing).",
-        "The rest of the Navbar and Hero content remains unchanged."
+        "The Hero section no longer displays the text '200' or 'happy clients' in any form.",
+        "The trust indicator now reads 'dozens of satisfied customers' (or equivalent natural phrasing matching the existing stat style).",
+        "No other content in the Hero section is altered."
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Navbar.tsx",
-          "operation": "modify",
-          "description": "Search for any instance of 'greater metro area' or similar generic metro area phrasing in the Navbar component and replace it with 'Serving Marshall, Longview, Jefferson & Surrounding Areas, Texas'. Review all text content including any service area labels or header text."
-        },
-        {
           "path": "frontend/src/components/Hero.tsx",
           "operation": "modify",
-          "description": "Search for any instance of 'greater metro area' or similar generic metro area phrasing in the Hero component (headline, tagline, or trust indicators) and replace it with 'Serving Marshall, Longview, Jefferson & Surrounding Areas, Texas'. Ensure the replacement fits naturally within the Hero layout."
+          "description": "Locate the trust indicator stat displaying '200 happy clients' (or similar variant like '200+' or '200 Happy Clients') and replace both the number and label text with 'dozens of satisfied customers'. Ensure the replacement matches the existing stat structure and styling while removing all references to '200' and 'happy clients'."
         }
       ]
     }

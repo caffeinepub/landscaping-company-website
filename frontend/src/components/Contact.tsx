@@ -36,20 +36,20 @@ const contactItems: ContactItem[] = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 bg-forest-800 texture-bg">
+    <section id="contact" className="py-24 bg-cream-200 texture-bg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Left: Text */}
           <div>
-            <span className="inline-block text-forest-300 font-sans text-sm font-semibold tracking-widest uppercase mb-3">
+            <span className="inline-block text-forest-600 font-sans text-sm font-semibold tracking-widest uppercase mb-3">
               Get in Touch
             </span>
-            <h2 className="font-serif font-bold text-cream-100 text-4xl sm:text-5xl mb-4 leading-tight">
+            <h2 className="font-serif font-bold text-forest-900 text-4xl sm:text-5xl mb-4 leading-tight">
               Ready for a{' '}
-              <span className="text-forest-300 italic">Beautiful Yard?</span>
+              <span className="text-forest-600 italic">Beautiful Yard?</span>
             </h2>
             <div className="w-16 h-1 bg-soil-400 mb-6 rounded-full" />
-            <p className="font-sans text-forest-200 text-lg leading-relaxed mb-10">
+            <p className="font-sans text-forest-800 text-lg leading-relaxed mb-10">
               Reach out today for a free, no-obligation quote. I&apos;ll come take a look at
               your property and put together a plan that fits your needs and budget.
             </p>
@@ -59,21 +59,21 @@ export default function Contact() {
               {contactItems.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-forest-700/60 border border-forest-600/50 rounded-lg p-5 hover:bg-forest-700/80 transition-colors"
+                  className="bg-cream-100 border border-forest-200 rounded-lg p-5 hover:bg-cream-50 transition-colors shadow-xs"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="w-11 h-11 rounded-lg bg-forest-600/60 text-forest-300 flex items-center justify-center shrink-0">
+                    <div className="w-11 h-11 rounded-lg bg-forest-100 text-forest-600 flex items-center justify-center shrink-0">
                       {item.icon}
                     </div>
                     <div>
-                      <p className="font-sans text-forest-400 text-xs font-semibold tracking-widest uppercase mb-0.5">
+                      <p className="font-sans text-forest-500 text-xs font-semibold tracking-widest uppercase mb-0.5">
                         {item.label}
                       </p>
-                      <p className="font-sans text-cream-200 text-sm font-medium leading-snug">
+                      <p className="font-sans text-forest-900 text-sm font-medium leading-snug">
                         {item.value}
                       </p>
                       {item.sub && (
-                        <p className="font-sans text-forest-400 text-xs mt-0.5">{item.sub}</p>
+                        <p className="font-sans text-forest-600 text-xs mt-0.5">{item.sub}</p>
                       )}
                     </div>
                   </div>
@@ -83,7 +83,7 @@ export default function Contact() {
           </div>
 
           {/* Right: Quote Card */}
-          <div className="bg-cream-200 rounded-lg p-8 sm:p-10 shadow-earthy-lg">
+          <div className="bg-cream-100 rounded-lg p-8 sm:p-10 shadow-earthy-lg border border-forest-200">
             <h3 className="font-serif font-bold text-forest-800 text-2xl mb-2">
               Request a Free Quote
             </h3>
@@ -157,7 +157,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full py-3.5 bg-forest-600 hover:bg-forest-500 text-cream-100 font-sans font-semibold text-base rounded transition-colors shadow-xs"
+                className="w-full py-3.5 bg-forest-600 hover:bg-forest-500 text-forest-900 font-sans font-semibold text-base rounded transition-colors shadow-xs"
               >
                 Send My Request
               </button>

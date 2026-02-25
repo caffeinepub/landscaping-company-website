@@ -1,36 +1,31 @@
 {
   "kind": "build_request",
-  "title": "Remove 'greater metro area' text from top of website",
-  "projectName": "Green Roots Landscaping",
-  "priority": "high",
+  "title": "Change '200 happy clients' to 'dozens of satisfied customers'",
+  "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-5",
-      "text": "Find and remove or replace every occurrence of 'greater metro area' (or similar generic metro area phrasing) anywhere in the Navbar, Hero section, or any other component rendered at the top of the page, replacing it with 'Serving Marshall, Longview, Jefferson & Surrounding Areas, Texas'.",
+      "id": "REQ-9",
+      "text": "In the Hero component (frontend/src/components/Hero.tsx), find the trust indicator stat that reads '200 happy clients' (or '200+' / '200 Happy Clients' or any similar variant) and replace it with 'dozens of satisfied customers'. Update both the number/value and the label text so no reference to '200' or 'happy clients' remains.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-1"
+          "msg-4"
         ],
         "quotes": [
-          "I see greater metro area at the top of the website"
+          "Change 200 happy clients to dozens of satisfied customers"
         ]
       },
       "acceptanceCriteria": [
-        "No instance of 'greater metro area' or similar generic metro phrasing appears anywhere on the page — including the Navbar, Hero, and any sticky/fixed header elements.",
-        "Any replaced text reads 'Serving Marshall, Longview, Jefferson & Surrounding Areas, Texas' (or equivalent natural phrasing).",
-        "The rest of the Navbar and Hero content remains unchanged."
+        "The Hero section no longer displays the text '200' or 'happy clients' in any form.",
+        "The trust indicator now reads 'dozens of satisfied customers' (or equivalent natural phrasing matching the existing stat style).",
+        "No other content in the Hero section is altered."
       ]
     }
   ],
-  "constraints": [
-    "Do not alter any layout, styling, or content unrelated to the metro area text fix.",
-    "Do not modify files under frontend/src/hooks/ or frontend/src/components/ui."
-  ],
+  "constraints": [],
   "nonGoals": [
-    "Redesigning the Hero or Navbar sections.",
-    "Adding new sections or features.",
-    "Backend changes."
+    "Changing any other stats or trust indicators in the Hero section.",
+    "Modifying any other component outside of Hero.tsx."
   ],
   "imageRequirements": {
     "required": [],
