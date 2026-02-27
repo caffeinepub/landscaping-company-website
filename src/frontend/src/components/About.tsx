@@ -19,13 +19,14 @@ export default function About() {
 
             <div className="relative rounded-lg overflow-hidden shadow-earthy-lg">
               <img
-                src="/assets/generated/matthew-britt.dim_800x1000.jpg"
+                src="/assets/uploads/PXL_20260225_034238671-1.jpg"
                 alt="Matthew Britt, Owner of Green Roots Landscaping"
-                className="w-full object-cover object-top aspect-[4/5]"
+                className="w-full object-cover object-center aspect-[4/5]"
               />
               {/* Name card overlay */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-cream-100/95 to-transparent p-6">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
                 <p className="font-serif font-bold text-white text-xl">Matthew Britt</p>
+                <p className="font-sans text-white/80 text-sm mt-1">Owner of Green Roots Landscaping</p>
               </div>
             </div>
 
@@ -62,9 +63,9 @@ export default function About() {
 
             {/* Highlights */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {highlights.map((item, index) => (
+              {highlights.map((item) => (
                 <div
-                  key={index}
+                  key={item.text}
                   className="flex items-center gap-3 bg-forest-50 border border-forest-100 rounded-lg px-4 py-3"
                 >
                   <span className="text-forest-600 shrink-0">{item.icon}</span>

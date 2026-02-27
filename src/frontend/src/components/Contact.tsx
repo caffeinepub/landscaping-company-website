@@ -17,7 +17,7 @@ const contactItems: ContactItem[] = [
   {
     icon: <MapPin className="w-6 h-6" />,
     label: 'Service Area',
-    value: 'Marshall, Longview, Jefferson & Surrounding Areas',
+    value: 'Marshall, Jefferson & Surrounding Areas',
     sub: 'East Texas, TX',
   },
   {

@@ -73,7 +73,7 @@ export default function Footer() {
               <li className="flex items-start gap-3 font-sans text-forest-700 text-sm">
                 <MapPin className="w-4 h-4 text-forest-600 shrink-0 mt-0.5" />
                 <span>
-                  Marshall, Longview, Jefferson &amp; Surrounding Areas<br />
+                  Marshall, Jefferson &amp; Surrounding Areas<br />
                   <span className="text-forest-600">East Texas, TX</span>
                 </span>
               </li>

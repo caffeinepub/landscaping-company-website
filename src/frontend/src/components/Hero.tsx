@@ -28,7 +28,7 @@ export default function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-forest-600/15 border border-forest-600/40 text-forest-800 text-sm font-sans font-medium mb-8 tracking-wide">
           <span className="w-2 h-2 rounded-full bg-forest-600 animate-pulse" />
-          Serving Marshall, Longview, Jefferson &amp; Surrounding Areas, Texas
+          Serving Marshall, Jefferson &amp; Surrounding Areas, Texas
         </div>
 
         {/* Headline */}
