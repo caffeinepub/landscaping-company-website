@@ -19,14 +19,14 @@ export default function About() {
 
             <div className="relative rounded-lg overflow-hidden shadow-earthy-lg">
               <img
-                src="/assets/uploads/PXL_20260225_034238671-1.jpg"
+                src="/assets/PXL_20260225_034238671.jpg"
                 alt="Matthew Britt, Owner of Green Roots Landscaping"
                 className="w-full object-cover object-center aspect-[4/5]"
               />
               {/* Name card overlay */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-                <p className="font-serif font-bold text-white text-xl">Matthew Britt</p>
-                <p className="font-sans text-white/80 text-sm mt-1">Owner of Green Roots Landscaping</p>
+              <div className="absolute bottom-0 left-0 right-0 p-6" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%)' }}>
+                <p className="font-serif font-bold text-xl" style={{ color: '#ffffff' }}>Matthew Britt</p>
+                <p className="font-sans text-sm mt-1" style={{ color: 'rgba(255,255,255,0.85)' }}>Owner of Green Roots Landscaping</p>
               </div>
             </div>
 

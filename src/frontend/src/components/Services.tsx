@@ -54,12 +54,12 @@ export default function Services() {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <div
-              key={index}
+              key={service.title}
               className="group bg-card rounded-lg p-8 shadow-xs hover:shadow-earthy transition-all duration-300 hover:-translate-y-1 border border-border text-center"
             >
-              <div className="w-16 h-16 rounded-lg bg-forest-100 text-forest-600 flex items-center justify-center mb-5 mx-auto group-hover:bg-forest-600 group-hover:text-cream-100 transition-colors duration-300">
+              <div className="w-16 h-16 rounded-lg bg-forest-100 text-forest-600 flex items-center justify-center mb-5 mx-auto group-hover:bg-forest-600 group-hover:text-cream-100 transition-colors duration-300 border-0">
                 {service.icon}
               </div>
               <h3 className="font-serif font-semibold text-forest-800 text-xl mb-3 leading-snug">
@@ -81,6 +81,7 @@ export default function Services() {
             I&apos;ll come out and take a look at your property for free. No pressure, no obligation.
           </p>
           <button
+            type="button"
             onClick={() => {
               const el = document.querySelector('#contact');
               if (el) el.scrollIntoView({ behavior: 'smooth' });
