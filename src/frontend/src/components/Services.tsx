@@ -27,7 +27,7 @@ const services: Service[] = [
   },
   {
     icon: <Leaf className="w-7 h-7" />,
-    title: "Leaf Blowing",
+    title: "Blow Off / Air Clean",
     description:
       "After every job I blow away all the clippings and mess with a leaf blower, leaving your property spotless and clean.",
   },
