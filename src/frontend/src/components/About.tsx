@@ -1,9 +1,12 @@
-import { CheckCircle2, Clock, Heart } from 'lucide-react';
+import { CheckCircle2, Clock, Heart } from "lucide-react";
 
 const highlights = [
-  { icon: <Clock className="w-5 h-5" />, text: 'Reliable & On-Time' },
-  { icon: <Heart className="w-5 h-5" />, text: 'Locally Owned & Operated' },
-  { icon: <CheckCircle2 className="w-5 h-5" />, text: 'Satisfaction Guaranteed' },
+  { icon: <Clock className="w-5 h-5" />, text: "Reliable & On-Time" },
+  { icon: <Heart className="w-5 h-5" />, text: "Locally Owned & Operated" },
+  {
+    icon: <CheckCircle2 className="w-5 h-5" />,
+    text: "Satisfaction Guaranteed",
+  },
 ];
 
 export default function About() {
@@ -20,20 +23,40 @@ export default function About() {
             <div className="relative rounded-lg overflow-hidden shadow-earthy-lg">
               <img
                 src="/assets/PXL_20260225_034238671.jpg"
-                alt="Matthew Britt, Owner of Green Roots Landscaping"
+                alt="Matthew Britt, Owner of Green Roots Lawn Care"
                 className="w-full object-cover object-center aspect-[4/5]"
               />
               {/* Name card overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-6" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%)' }}>
-                <p className="font-serif font-bold text-xl" style={{ color: '#ffffff' }}>Matthew Britt</p>
-                <p className="font-sans text-sm mt-1" style={{ color: 'rgba(255,255,255,0.85)' }}>Owner of Green Roots Landscaping</p>
+              <div
+                className="absolute bottom-0 left-0 right-0 p-6"
+                style={{
+                  background:
+                    "linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%)",
+                }}
+              >
+                <p
+                  className="font-serif font-bold text-xl"
+                  style={{ color: "#ffffff" }}
+                >
+                  Matthew Britt
+                </p>
+                <p
+                  className="font-sans text-sm mt-1"
+                  style={{ color: "rgba(255,255,255,0.85)" }}
+                >
+                  Owner of Green Roots Lawn Care
+                </p>
               </div>
             </div>
 
             {/* Floating badge */}
             <div className="absolute -bottom-6 -right-2 sm:-right-6 bg-soil-400 text-forest-900 rounded-lg px-5 py-4 shadow-earthy-lg text-center">
               <p className="font-serif font-bold text-3xl leading-none">10+</p>
-              <p className="font-sans text-xs font-medium mt-1 leading-tight">Years of<br />Experience</p>
+              <p className="font-sans text-xs font-medium mt-1 leading-tight">
+                Years of
+                <br />
+                Experience
+              </p>
             </div>
           </div>
 
@@ -43,21 +66,23 @@ export default function About() {
               About Me
             </span>
             <h2 className="font-serif font-bold text-forest-800 text-4xl sm:text-5xl mb-4 leading-tight">
-              A Passion for the{' '}
+              A Passion for the{" "}
               <span className="text-forest-500 italic">Outdoors</span>
             </h2>
             <div className="w-16 h-1 bg-soil-400 mb-6 rounded-full" />
 
             <div className="space-y-4 font-sans text-foreground/80 text-base leading-relaxed mb-8">
               <p>
-                Hi, I&apos;m Matthew, the sole owner of Green Roots Landscaping. I started this
-                business with a simple belief: every yard deserves to look its best, and every
-                client deserves honest, dependable service.
+                Hi, I&apos;m Matthew, the sole owner of Green Roots Lawn Care. I
+                started this business with a simple belief: every yard deserves
+                to look its best, and every client deserves honest, dependable
+                service.
               </p>
               <p>
-                I handle every job personally, which means you&apos;ll always know who&apos;s showing
-                up at your door. No subcontractors, no surprises. Just me, my tools, and a
-                genuine commitment to making your outdoor space something you&apos;re proud of.
+                I handle every job personally, which means you&apos;ll always
+                know who&apos;s showing up at your door. No subcontractors, no
+                surprises. Just me, my tools, and a genuine commitment to making
+                your outdoor space something you&apos;re proud of.
               </p>
             </div>
 
@@ -69,7 +94,9 @@ export default function About() {
                   className="flex items-center gap-3 bg-forest-50 border border-forest-100 rounded-lg px-4 py-3"
                 >
                   <span className="text-forest-600 shrink-0">{item.icon}</span>
-                  <span className="font-sans text-forest-800 text-sm font-medium">{item.text}</span>
+                  <span className="font-sans text-forest-800 text-sm font-medium">
+                    {item.text}
+                  </span>
                 </div>
               ))}
             </div>

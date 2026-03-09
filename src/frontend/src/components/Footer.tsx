@@ -1,10 +1,10 @@
-import { Leaf, Phone, MapPin } from 'lucide-react';
+import { Leaf, MapPin, Phone } from "lucide-react";
 
 const navLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'Services', href: '#services' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: "Home", href: "#home" },
+  { label: "Services", href: "#services" },
+  { label: "About", href: "#about" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Footer() {
@@ -12,7 +12,7 @@ export default function Footer() {
 
   const handleNavClick = (href: string) => {
     const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -31,13 +31,13 @@ export default function Footer() {
                   Green Roots
                 </span>
                 <span className="block text-forest-600 text-xs tracking-widest uppercase leading-tight">
-                  Landscaping
+                  Lawn Care
                 </span>
               </div>
             </div>
             <p className="font-sans text-forest-700 text-sm leading-relaxed max-w-xs">
-              Professional, personal landscaping services for homeowners who take pride in
-              their outdoor spaces.
+              Professional, personal lawn care services for homeowners who take
+              pride in their outdoor spaces.
             </p>
           </div>
 
@@ -50,6 +50,7 @@ export default function Footer() {
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <button
+                    type="button"
                     onClick={() => handleNavClick(link.href)}
                     className="font-sans text-forest-700 hover:text-forest-900 text-sm transition-colors"
                   >
@@ -73,7 +74,8 @@ export default function Footer() {
               <li className="flex items-start gap-3 font-sans text-forest-700 text-sm">
                 <MapPin className="w-4 h-4 text-forest-600 shrink-0 mt-0.5" />
                 <span>
-                  Marshall, Jefferson &amp; Surrounding Areas<br />
+                  Marshall, Jefferson &amp; Surrounding Areas
+                  <br />
                   <span className="text-forest-600">East Texas, TX</span>
                 </span>
               </li>
@@ -83,7 +85,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-forest-200 py-6 flex items-center justify-center text-xs font-sans text-forest-600">
-          <p>&copy; {year} Green Roots Landscaping. All rights reserved.</p>
+          <p>&copy; {year} Green Roots Lawn Care. All rights reserved.</p>
         </div>
       </div>
     </footer>

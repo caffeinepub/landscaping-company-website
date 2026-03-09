@@ -1,4 +1,4 @@
-import { Scissors, Wind, Ruler, Leaf } from 'lucide-react';
+import { Leaf, Ruler, Scissors, Wind } from "lucide-react";
 
 interface Service {
   icon: React.ReactNode;
@@ -9,27 +9,27 @@ interface Service {
 const services: Service[] = [
   {
     icon: <Scissors className="w-7 h-7" />,
-    title: 'Lawn Mowing',
+    title: "Lawn Mowing",
     description:
-      'Clean, even cuts every visit to keep your lawn healthy, tidy, and looking its best throughout the season.',
+      "Clean, even cuts every visit to keep your lawn healthy, tidy, and looking its best throughout the season.",
   },
   {
     icon: <Wind className="w-7 h-7" />,
-    title: 'Weed Eating',
+    title: "Weed Eating",
     description:
-      'Precise string trimming around fences, trees, flower beds, and hard-to-reach spots your mower can\'t get to.',
+      "Precise string trimming around fences, trees, flower beds, and hard-to-reach spots your mower can't get to.",
   },
   {
     icon: <Ruler className="w-7 h-7" />,
-    title: 'Edging',
+    title: "Edging",
     description:
-      'Sharp, defined edges along driveways, sidewalks, and curbs for that crisp, professional finished look.',
+      "Sharp, defined edges along driveways, sidewalks, and curbs for that crisp, professional finished look.",
   },
   {
     icon: <Leaf className="w-7 h-7" />,
-    title: 'Leaf Blowing',
+    title: "Leaf Blowing",
     description:
-      'After every job I blow away all the clippings and mess with a leaf blower, leaving your property spotless and clean.',
+      "After every job I blow away all the clippings and mess with a leaf blower, leaving your property spotless and clean.",
   },
 ];
 
@@ -47,8 +47,8 @@ export default function Services() {
           </h2>
           <div className="w-16 h-1 bg-soil-400 mx-auto mb-6 rounded-full" />
           <p className="font-sans text-muted-foreground text-lg max-w-xl mx-auto leading-relaxed">
-            Simple, reliable lawn care done right. I focus on the essentials so your
-            yard always looks sharp.
+            Simple, reliable lawn care done right. I focus on the essentials so
+            your yard always looks sharp.
           </p>
         </div>
 
@@ -78,13 +78,14 @@ export default function Services() {
             Ready for a cleaner yard?
           </h3>
           <p className="font-sans text-forest-700 text-base mb-6 max-w-lg mx-auto">
-            I&apos;ll come out and take a look at your property for free. No pressure, no obligation.
+            I&apos;ll come out and take a look at your property for free. No
+            pressure, no obligation.
           </p>
           <button
             type="button"
             onClick={() => {
-              const el = document.querySelector('#contact');
-              if (el) el.scrollIntoView({ behavior: 'smooth' });
+              const el = document.querySelector("#contact");
+              if (el) el.scrollIntoView({ behavior: "smooth" });
             }}
             className="inline-block px-8 py-3 bg-soil-400 hover:bg-soil-300 text-forest-900 font-sans font-semibold rounded transition-colors shadow-xs"
           >
