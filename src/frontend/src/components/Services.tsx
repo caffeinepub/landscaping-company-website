@@ -17,7 +17,7 @@ const services: Service[] = [
     icon: <Wind className="w-7 h-7" />,
     title: "Weed Eating",
     description:
-      "Precise string trimming around fences, trees, flower beds, and hard-to-reach spots your mower can't get to.",
+      "Precise string trimming around fences, trees, flower beds, and hard-to-reach spots a mower can't get to.",
   },
   {
     icon: <Ruler className="w-7 h-7" />,
@@ -87,7 +87,7 @@ export default function Services() {
               const el = document.querySelector("#contact");
               if (el) el.scrollIntoView({ behavior: "smooth" });
             }}
-            className="inline-block px-8 py-3 bg-soil-400 hover:bg-soil-300 text-forest-900 font-sans font-semibold rounded transition-colors shadow-xs"
+            className="inline-block px-8 py-3 bg-forest-600 hover:bg-forest-500 text-white font-sans font-semibold rounded transition-colors shadow-xs"
           >
             Schedule a Free Assessment
           </button>

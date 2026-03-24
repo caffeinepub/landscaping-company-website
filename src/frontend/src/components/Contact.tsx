@@ -101,7 +101,7 @@ export default function Contact() {
                   <input
                     id="quote-first-name"
                     type="text"
-                    placeholder="Jane"
+                    placeholder=""
                     required
                     data-ocid="quote.first_name.input"
                     className="w-full px-4 py-2.5 bg-card border border-border rounded font-sans text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-forest-400/50 focus:border-forest-400 transition-colors"
@@ -120,7 +120,7 @@ export default function Contact() {
                   <input
                     id="quote-last-name"
                     type="text"
-                    placeholder="Smith"
+                    placeholder=""
                     data-ocid="quote.last_name.input"
                     className="w-full px-4 py-2.5 bg-card border border-border rounded font-sans text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-forest-400/50 focus:border-forest-400 transition-colors"
                   />
@@ -137,7 +137,7 @@ export default function Contact() {
                 <input
                   id="quote-phone"
                   type="tel"
-                  placeholder="(555) 000-0000"
+                  placeholder=""
                   required
                   data-ocid="quote.phone.input"
                   className="w-full px-4 py-2.5 bg-card border border-border rounded font-sans text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-forest-400/50 focus:border-forest-400 transition-colors"
@@ -157,7 +157,7 @@ export default function Contact() {
                 <input
                   id="quote-email"
                   type="email"
-                  placeholder="you@example.com"
+                  placeholder=""
                   data-ocid="quote.email.input"
                   className="w-full px-4 py-2.5 bg-card border border-border rounded font-sans text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-forest-400/50 focus:border-forest-400 transition-colors"
                 />
