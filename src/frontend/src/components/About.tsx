@@ -51,7 +51,7 @@ export default function About() {
 
             {/* Floating badge */}
             <div className="absolute -bottom-6 -right-2 sm:-right-6 bg-soil-400 text-forest-900 rounded-lg px-5 py-4 shadow-earthy-lg text-center">
-              <p className="font-serif font-bold text-3xl leading-none">10+</p>
+              <p className="font-serif font-bold text-3xl leading-none">5+</p>
               <p className="font-sans text-xs font-medium mt-1 leading-tight">
                 Years of
                 <br />

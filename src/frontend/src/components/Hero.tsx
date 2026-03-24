@@ -66,7 +66,7 @@ export default function Hero() {
         <div className="mt-16 flex flex-wrap justify-center gap-8 text-white font-sans text-sm">
           <div className="flex items-center gap-2">
             <span className="text-green-300 font-bold text-2xl font-serif">
-              10+
+              5+
             </span>
             <span>Years Experience</span>
           </div>
