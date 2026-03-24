@@ -1,4 +1,4 @@
-import { Leaf, Ruler, Scissors, Wind } from "lucide-react";
+import { Leaf, Ruler, Scissors, Sprout } from "lucide-react";
 
 interface Service {
   icon: React.ReactNode;
@@ -14,7 +14,7 @@ const services: Service[] = [
       "Clean, even cuts every visit to keep your lawn healthy, tidy, and looking its best throughout the season.",
   },
   {
-    icon: <Wind className="w-7 h-7" />,
+    icon: <Sprout className="w-7 h-7" />,
     title: "Weed Eating",
     description:
       "Precise string trimming around fences, trees, flower beds, and hard-to-reach spots a mower can't get to.",
