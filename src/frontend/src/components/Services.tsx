@@ -1,213 +1,106 @@
 import { Leaf, Ruler, Wheat } from "lucide-react";
 
-// Improved riding mower icon with roll bar
-function RidingMowerIcon({ className }: { className?: string }) {
+// Push mower icon — tall and slender
+function PushMowerIcon({ className }: { className?: string }) {
   return (
     <svg
       role="img"
-      aria-label="Riding mower"
-      viewBox="0 0 64 64"
+      aria-label="Push mower"
+      viewBox="0 0 40 64"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      {/* Roll bar ROPS — left post */}
-      <rect
-        x="22"
-        y="7"
-        width="3.5"
-        height="18"
-        rx="1.75"
-        fill="currentColor"
+      {/* Handle left post */}
+      <line
+        x1="14"
+        y1="44"
+        x2="8"
+        y2="6"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
       />
-      {/* Roll bar top horizontal */}
-      <rect
-        x="22"
-        y="7"
-        width="16"
-        height="3.5"
-        rx="1.75"
-        fill="currentColor"
+      {/* Handle right post */}
+      <line
+        x1="20"
+        y1="44"
+        x2="14"
+        y2="6"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
       />
-      {/* Roll bar — right post */}
-      <rect
-        x="34.5"
-        y="7"
-        width="3.5"
-        height="13"
-        rx="1.75"
-        fill="currentColor"
+      {/* Handle crossbar */}
+      <line
+        x1="8"
+        y1="6"
+        x2="14"
+        y2="6"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
       />
 
-      {/* Seat back */}
+      {/* Engine top cap */}
       <rect
-        x="23"
-        y="22"
-        width="9"
-        height="5"
-        rx="2"
-        fill="currentColor"
-        opacity="0.65"
-      />
-      {/* Seat cushion */}
-      <rect
-        x="21"
-        y="26"
-        width="13"
+        x="14"
+        y="28"
+        width="10"
         height="4"
         rx="2"
         fill="currentColor"
-        opacity="0.85"
+        opacity="0.6"
       />
-
-      {/* Steering column */}
+      {/* Engine block */}
       <rect
-        x="31"
-        y="24"
-        width="2.5"
+        x="12"
+        y="32"
+        width="14"
         height="6"
-        rx="1.25"
+        rx="2"
         fill="currentColor"
         opacity="0.8"
       />
-      {/* Steering wheel ring */}
-      <circle
-        cx="32"
-        cy="23"
-        r="4"
-        stroke="currentColor"
-        strokeWidth="2.5"
-        fill="none"
-      />
-      {/* Steering wheel spokes */}
-      <line
-        x1="32"
-        y1="19"
-        x2="32"
-        y2="27"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      <line
-        x1="28"
-        y1="23"
-        x2="36"
-        y2="23"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
 
-      {/* Main body / hood */}
+      {/* Mower deck body */}
       <path
-        d="M12 32 L14 28 Q15 26 18 26 L46 26 Q50 26 51 30 L52 36 Q52 38 50 38 L14 38 Q12 38 12 36 Z"
+        d="M4 40 Q4 37 7 37 L33 37 Q36 37 36 40 L36 46 Q36 49 33 49 L7 49 Q4 49 4 46 Z"
         fill="currentColor"
       />
 
-      {/* Mower deck (cutting housing) */}
+      {/* Discharge chute right */}
       <rect
-        x="9"
-        y="38"
-        width="36"
-        height="6"
-        rx="3"
-        fill="currentColor"
-        opacity="0.8"
-      />
-      {/* Discharge chute */}
-      <rect
-        x="44"
-        y="40"
-        width="5"
+        x="34"
+        y="42"
+        width="4"
         height="3"
         rx="1"
         fill="currentColor"
         opacity="0.7"
       />
 
-      {/* Rear large drive wheel */}
+      {/* Rear wheel */}
       <circle
-        cx="47"
-        cy="45"
-        r="9"
-        stroke="currentColor"
-        strokeWidth="3"
-        fill="none"
-      />
-      <circle cx="47" cy="45" r="3" fill="currentColor" />
-      {/* Tread lines rear */}
-      <line
-        x1="47"
-        y1="36"
-        x2="47"
-        y2="54"
-        stroke="currentColor"
-        strokeWidth="1"
-        strokeLinecap="round"
-        opacity="0.4"
-      />
-      <line
-        x1="38"
-        y1="45"
-        x2="56"
-        y2="45"
-        stroke="currentColor"
-        strokeWidth="1"
-        strokeLinecap="round"
-        opacity="0.4"
-      />
-
-      {/* Front small caster wheel */}
-      <circle
-        cx="16"
-        cy="47"
+        cx="28"
+        cy="55"
         r="6"
         stroke="currentColor"
         strokeWidth="2.5"
         fill="none"
       />
-      <circle cx="16" cy="47" r="2" fill="currentColor" />
-      {/* Tread lines front */}
-      <line
-        x1="16"
-        y1="41"
-        x2="16"
-        y2="53"
-        stroke="currentColor"
-        strokeWidth="1"
-        strokeLinecap="round"
-        opacity="0.4"
-      />
-      <line
-        x1="10"
-        y1="47"
-        x2="22"
-        y2="47"
-        stroke="currentColor"
-        strokeWidth="1"
-        strokeLinecap="round"
-        opacity="0.4"
-      />
+      <circle cx="28" cy="55" r="2" fill="currentColor" />
 
-      {/* Exhaust pipe */}
-      <rect
-        x="39"
-        y="27"
-        width="3"
-        height="7"
-        rx="1.5"
-        fill="currentColor"
-        opacity="0.6"
+      {/* Front wheel */}
+      <circle
+        cx="12"
+        cy="55"
+        r="6"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        fill="none"
       />
-      <ellipse
-        cx="40.5"
-        cy="27"
-        rx="2"
-        ry="1"
-        fill="currentColor"
-        opacity="0.6"
-      />
+      <circle cx="12" cy="55" r="2" fill="currentColor" />
     </svg>
   );
 }
@@ -220,7 +113,7 @@ interface Service {
 
 const services: Service[] = [
   {
-    icon: <RidingMowerIcon className="w-7 h-7" />,
+    icon: <PushMowerIcon className="w-7 h-7" />,
     title: "Lawn Mowing",
     description:
       "Clean, even cuts every visit to keep your lawn healthy, tidy, and looking its best throughout the season.",

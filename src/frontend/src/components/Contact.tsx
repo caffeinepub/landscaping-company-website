@@ -5,6 +5,7 @@ interface ContactItem {
   label: string;
   value: string;
   sub?: string;
+  note?: string;
 }
 
 const contactItems: ContactItem[] = [
@@ -13,6 +14,7 @@ const contactItems: ContactItem[] = [
     label: "Phone",
     value: "940-735-8008",
     sub: "Call or text anytime",
+    note: "I work an evening job from 4pm to 10pm and I am unable to answer the phone during that time. Text is the best way to reach me.",
   },
   {
     icon: <MapPin className="w-6 h-6" />,
@@ -69,6 +71,11 @@ export default function Contact() {
                       {item.sub && (
                         <p className="font-sans text-forest-600 text-xs mt-0.5">
                           {item.sub}
+                        </p>
+                      )}
+                      {item.note && (
+                        <p className="font-sans text-forest-500 text-xs mt-1.5 leading-snug italic">
+                          {item.note}
                         </p>
                       )}
                     </div>
