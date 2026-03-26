@@ -1,4 +1,47 @@
-import { CheckCircle2, Heart, Settings } from "lucide-react";
+import { CheckCircle2, Settings } from "lucide-react";
+
+function MapGridIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      role="img"
+      aria-label="Map grid icon"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      {/* Outer square */}
+      <rect
+        x="2"
+        y="2"
+        width="16"
+        height="16"
+        rx="1"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        fill="none"
+      />
+      {/* Vertical column in the middle */}
+      <line
+        x1="10"
+        y1="2"
+        x2="10"
+        y2="18"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+      {/* Horizontal line in the middle */}
+      <line
+        x1="2"
+        y1="10"
+        x2="18"
+        y2="10"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+    </svg>
+  );
+}
 
 const highlights = [
   {
@@ -6,7 +49,7 @@ const highlights = [
     text: "Reliable",
   },
   {
-    icon: <Heart className="w-5 h-5" />,
+    icon: <MapGridIcon className="w-5 h-5" />,
     text: "Locally Owned & Operated",
   },
   {
