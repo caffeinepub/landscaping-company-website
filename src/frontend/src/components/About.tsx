@@ -1,43 +1,17 @@
 import { CheckCircle2, Heart, Settings } from "lucide-react";
 
-const StrongArmIcon = () => (
-  <svg
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.8"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="w-5 h-5"
-    aria-hidden="true"
-  >
-    {/* Forearm */}
-    <path d="M3 17 Q5 14 8 13 L14 11" />
-    {/* Upper arm bicep curve */}
-    <path d="M14 11 Q18 9 19 6 Q20 3 17 3 Q14 3 13 6" />
-    {/* Bicep peak */}
-    <path d="M13 6 Q12 4 14 3" />
-    {/* Fist / hand */}
-    <rect x="8" y="13" width="6" height="4" rx="1.5" />
-    <path d="M8 14 L5 14 Q3.5 14 3.5 15.5 Q3.5 17 5 17 L8 17" />
-  </svg>
-);
-
 const highlights = [
   {
-    icon: <StrongArmIcon />,
+    icon: <Settings className="w-5 h-5" />,
     text: "Reliable",
-    extra: <Settings className="w-4 h-4 ml-1" />,
   },
   {
     icon: <Heart className="w-5 h-5" />,
     text: "Locally Owned & Operated",
-    extra: null,
   },
   {
     icon: <CheckCircle2 className="w-5 h-5" />,
     text: "Satisfaction Guaranteed",
-    extra: null,
   },
 ];
 
@@ -129,11 +103,6 @@ export default function About() {
                   <span className="font-sans text-forest-800 text-sm font-medium">
                     {item.text}
                   </span>
-                  {item.extra && (
-                    <span className="text-forest-600 shrink-0">
-                      {item.extra}
-                    </span>
-                  )}
                 </div>
               ))}
             </div>
