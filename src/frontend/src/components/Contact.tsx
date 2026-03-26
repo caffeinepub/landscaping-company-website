@@ -192,7 +192,7 @@ export default function Contact() {
               <button
                 type="submit"
                 data-ocid="quote.submit_button"
-                className="w-full py-3.5 bg-forest-600 hover:bg-forest-500 text-forest-900 font-sans font-semibold text-base rounded transition-colors shadow-xs"
+                className="w-full py-3.5 bg-forest-600 hover:bg-forest-500 text-white font-sans font-semibold text-base rounded transition-colors shadow-xs"
               >
                 Send My Request
               </button>
