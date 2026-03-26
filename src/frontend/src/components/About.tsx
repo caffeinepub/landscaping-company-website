@@ -1,4 +1,4 @@
-import { CheckCircle2, Heart } from "lucide-react";
+import { CheckCircle2, Heart, Settings } from "lucide-react";
 
 const StrongArmIcon = () => (
   <svg
@@ -24,11 +24,20 @@ const StrongArmIcon = () => (
 );
 
 const highlights = [
-  { icon: <StrongArmIcon />, text: "Reliable" },
-  { icon: <Heart className="w-5 h-5" />, text: "Locally Owned & Operated" },
+  {
+    icon: <StrongArmIcon />,
+    text: "Reliable",
+    extra: <Settings className="w-4 h-4 ml-1" />,
+  },
+  {
+    icon: <Heart className="w-5 h-5" />,
+    text: "Locally Owned & Operated",
+    extra: null,
+  },
   {
     icon: <CheckCircle2 className="w-5 h-5" />,
     text: "Satisfaction Guaranteed",
+    extra: null,
   },
 ];
 
@@ -120,6 +129,11 @@ export default function About() {
                   <span className="font-sans text-forest-800 text-sm font-medium">
                     {item.text}
                   </span>
+                  {item.extra && (
+                    <span className="text-forest-600 shrink-0">
+                      {item.extra}
+                    </span>
+                  )}
                 </div>
               ))}
             </div>
