@@ -14,7 +14,7 @@ const contactItems: ContactItem[] = [
     label: "Phone",
     value: "940-735-8008",
     sub: "Call or text anytime",
-    note: "I work an evening job from 4pm to 10pm and I am unable to answer the phone around that time. Text is the best way to reach me.",
+    note: "I work an evening job from 4pm to 10pm and I am unable to answer the phone around that time. Text is the best way to reach me during that time.",
   },
   {
     icon: <MapPin className="w-6 h-6" />,
