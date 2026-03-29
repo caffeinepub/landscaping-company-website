@@ -1,35 +1,27 @@
 import { Clock, MapPin, Phone } from "lucide-react";
+import { useEffect, useState } from "react";
 
-interface ContactItem {
-  icon: React.ReactNode;
-  label: string;
-  value: string;
-  sub?: string;
-  note?: string;
+function usePhoneHoursStatus() {
+  const getStatus = () => {
+    const hour = new Date().getHours();
+    // Open: 10pm (22) to 4pm (16) — i.e., 22,23,0..15 are open; 16..21 are closed
+    return hour >= 16 && hour < 22 ? "closed" : "open";
+  };
+
+  const [status, setStatus] = useState(getStatus);
+
+  // biome-ignore lint/correctness/useExhaustiveDependencies: getStatus is stable
+  useEffect(() => {
+    const interval = setInterval(() => setStatus(getStatus()), 60000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return status;
 }
 
-const contactItems: ContactItem[] = [
-  {
-    icon: <Phone className="w-6 h-6" />,
-    label: "Phone",
-    value: "940-735-8008",
-    sub: "Call or text anytime",
-    note: "I work an evening job from 4pm to 10pm and I am unable to answer the phone around that time. Text is the best way to reach me during that time.",
-  },
-  {
-    icon: <MapPin className="w-6 h-6" />,
-    label: "Service Area",
-    value: "Marshall, Jefferson & Surrounding Areas",
-    sub: "East Texas, TX",
-  },
-  {
-    icon: <Clock className="w-6 h-6" />,
-    label: "Hours",
-    value: "Every Day: 7:00 AM – 3:00 PM",
-  },
-];
-
 export default function Contact() {
+  const phoneStatus = usePhoneHoursStatus();
+
   return (
     <section id="contact" className="py-24 bg-cream-200 texture-bg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,36 +44,78 @@ export default function Contact() {
 
             {/* Contact Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {contactItems.map((item) => (
-                <div
-                  key={item.label}
-                  className="bg-cream-100 border border-forest-200 rounded-lg p-5 hover:bg-cream-50 transition-colors shadow-xs"
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="w-11 h-11 rounded-lg bg-forest-100 text-forest-600 flex items-center justify-center shrink-0">
-                      {item.icon}
-                    </div>
-                    <div>
-                      <p className="font-sans text-forest-500 text-xs font-semibold tracking-widest uppercase mb-0.5">
-                        {item.label}
-                      </p>
+              {/* Phone Card */}
+              <div className="bg-cream-100 border border-forest-200 rounded-lg p-5 hover:bg-cream-50 transition-colors shadow-xs">
+                <div className="flex items-start gap-4">
+                  <div className="w-11 h-11 rounded-lg bg-forest-100 text-forest-600 flex items-center justify-center shrink-0">
+                    <Phone className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="font-sans text-forest-500 text-xs font-semibold tracking-widest uppercase mb-0.5">
+                      Phone
+                    </p>
+                    <div className="flex items-center gap-2 flex-wrap">
                       <p className="font-sans text-forest-900 text-sm font-medium leading-snug">
-                        {item.value}
+                        940-735-8008
                       </p>
-                      {item.sub && (
-                        <p className="font-sans text-forest-600 text-xs mt-0.5">
-                          {item.sub}
-                        </p>
-                      )}
-                      {item.note && (
-                        <p className="font-sans text-forest-500 text-xs mt-1.5 leading-snug italic">
-                          {item.note}
-                        </p>
-                      )}
+                      <span
+                        className={`inline-flex items-center text-xs font-semibold px-2 py-0.5 rounded-full ${
+                          phoneStatus === "open"
+                            ? "bg-green-100 text-green-700"
+                            : "bg-red-100 text-red-600"
+                        }`}
+                      >
+                        Phone hours: {phoneStatus}
+                      </span>
                     </div>
+                    <p className="font-sans text-forest-600 text-xs mt-0.5">
+                      Call or text anytime
+                    </p>
+                    <p className="font-sans text-forest-500 text-xs mt-1.5 leading-snug italic">
+                      I work an evening job from 4pm to 10pm and I am unable to
+                      answer the phone around that time. Text is the best way to
+                      reach me during that time.
+                    </p>
                   </div>
                 </div>
-              ))}
+              </div>
+
+              {/* Service Area Card */}
+              <div className="bg-cream-100 border border-forest-200 rounded-lg p-5 hover:bg-cream-50 transition-colors shadow-xs">
+                <div className="flex items-start gap-4">
+                  <div className="w-11 h-11 rounded-lg bg-forest-100 text-forest-600 flex items-center justify-center shrink-0">
+                    <MapPin className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="font-sans text-forest-500 text-xs font-semibold tracking-widest uppercase mb-0.5">
+                      Service Area
+                    </p>
+                    <p className="font-sans text-forest-900 text-sm font-medium leading-snug">
+                      Marshall, Jefferson & Surrounding Areas
+                    </p>
+                    <p className="font-sans text-forest-600 text-xs mt-0.5">
+                      East Texas, TX
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Hours Card */}
+              <div className="bg-cream-100 border border-forest-200 rounded-lg p-5 hover:bg-cream-50 transition-colors shadow-xs">
+                <div className="flex items-start gap-4">
+                  <div className="w-11 h-11 rounded-lg bg-forest-100 text-forest-600 flex items-center justify-center shrink-0">
+                    <Clock className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="font-sans text-forest-500 text-xs font-semibold tracking-widest uppercase mb-0.5">
+                      Hours
+                    </p>
+                    <p className="font-sans text-forest-900 text-sm font-medium leading-snug">
+                      Every Day: 7:00 AM – 3:00 PM
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
