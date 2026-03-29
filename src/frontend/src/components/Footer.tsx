@@ -28,7 +28,7 @@ export default function Footer() {
               </div>
               <div>
                 <span className="block font-serif font-bold text-forest-900 text-lg leading-tight">
-                  Green Roots
+                  Green Root
                 </span>
                 <span className="block text-forest-600 text-xs tracking-widest uppercase leading-tight">
                   Lawn Care
@@ -85,7 +85,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-forest-200 py-6 flex items-center justify-center text-xs font-sans text-forest-600">
-          <p>&copy; {year} Green Roots Lawn Care. All rights reserved.</p>
+          <p>&copy; {year} Green Root Lawn Care. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -47,7 +47,7 @@ export default function Navbar() {
             </div>
             <div className="text-left">
               <span className="block font-serif font-bold text-forest-900 text-lg leading-tight">
-                Green Roots
+                Green Root
               </span>
               <span className="block text-forest-600 text-xs tracking-widest uppercase leading-tight">
                 Lawn Care

@@ -72,7 +72,7 @@ export default function About() {
             <div className="relative rounded-lg overflow-hidden shadow-earthy-lg">
               <img
                 src="/assets/PXL_20260225_034238671.jpg"
-                alt="Matthew Britt, Owner of Green Roots Lawn Care"
+                alt="Matthew Britt, Owner of Green Root Lawn Care"
                 className="w-full object-cover object-center aspect-[4/5]"
               />
               {/* Name card overlay */}
@@ -93,7 +93,7 @@ export default function About() {
                   className="font-sans text-sm mt-1"
                   style={{ color: "rgba(255,255,255,0.85)" }}
                 >
-                  Owner of Green Roots Lawn Care
+                  Owner of Green Root Lawn Care
                 </p>
               </div>
             </div>
@@ -122,7 +122,7 @@ export default function About() {
 
             <div className="space-y-4 font-sans text-foreground/80 text-base leading-relaxed mb-8">
               <p>
-                Hi, I&apos;m Matthew, the sole owner of Green Roots Lawn Care. I
+                Hi, I&apos;m Matthew, the sole owner of Green Root Lawn Care. I
                 started this business with a simple belief: every yard deserves
                 to look its best, and every client deserves honest, dependable
                 service.
