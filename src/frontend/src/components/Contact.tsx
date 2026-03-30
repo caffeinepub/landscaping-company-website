@@ -69,18 +69,7 @@ export default function Contact() {
                       </span>
                     </div>
                     <p className="font-sans text-forest-600 text-xs mt-0.5">
-                      Call or text anytime
-                    </p>
-                    <p
-                      className={`font-sans text-xs mt-1.5 leading-snug italic ${
-                        phoneStatus === "open"
-                          ? "text-green-700"
-                          : "text-red-600"
-                      }`}
-                    >
-                      I work an evening job from 4pm to 10pm and I am unable to
-                      answer the phone around that time. Text is the best way to
-                      reach me during that time.
+                      call during phone hours, text anytime.
                     </p>
                   </div>
                 </div>
