@@ -222,7 +222,7 @@ export default function Contact() {
                 <textarea
                   id="quote-message"
                   rows={3}
-                  placeholder=""
+                  placeholder="Tell me a bit about your yard and what you're looking for"
                   data-ocid="quote.message.textarea"
                   className="w-full px-4 py-2.5 bg-card border border-border rounded font-sans text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-forest-400/50 focus:border-forest-400 transition-colors resize-none"
                 />
