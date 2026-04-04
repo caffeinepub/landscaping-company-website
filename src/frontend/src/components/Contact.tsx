@@ -200,10 +200,6 @@ export default function Contact() {
                     (optional)
                   </span>
                 </label>
-                <p className="font-sans text-forest-500 text-xs mb-1.5">
-                  Providing your address helps me give you a more accurate
-                  quote.
-                </p>
                 <input
                   id="quote-address"
                   type="text"
