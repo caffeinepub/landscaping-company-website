@@ -192,6 +192,29 @@ export default function Contact() {
 
               <div>
                 <label
+                  htmlFor="quote-address"
+                  className="block font-sans text-forest-700 text-sm font-medium mb-1.5"
+                >
+                  House Address{" "}
+                  <span className="text-forest-500 font-normal text-xs">
+                    (optional)
+                  </span>
+                </label>
+                <p className="font-sans text-forest-500 text-xs mb-1.5">
+                  Providing your address helps me give you a more accurate
+                  quote.
+                </p>
+                <input
+                  id="quote-address"
+                  type="text"
+                  placeholder=""
+                  data-ocid="quote.address.input"
+                  className="w-full px-4 py-2.5 bg-card border border-border rounded font-sans text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-forest-400/50 focus:border-forest-400 transition-colors"
+                />
+              </div>
+
+              <div>
+                <label
                   htmlFor="quote-email"
                   className="block font-sans text-forest-700 text-sm font-medium mb-1.5"
                 >
